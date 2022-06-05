@@ -1,0 +1,62 @@
+{
+  "name": "sim-view",
+  "version": "0.0.1",
+  "private": false,
+  "description": "基于vue2.0 ElementUI创建",
+  "main": "lib/sim-view.umd.min.js",
+  "author": "sanyer",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "build:lib": "vue-cli-service build --target lib ./packages/index.js --dest ./lib --name sim-view",
+    "build:libs": "npm run build:lib && gulp build"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "element-ui": "^2.15.9",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.7",
+    "@vue/cli-plugin-eslint": "~4.5.7",
+    "@vue/cli-plugin-router": "~4.5.7",
+    "@vue/cli-plugin-unit-mocha": "~4.5.7",
+    "@vue/cli-plugin-vuex": "~4.5.7",
+    "@vue/cli-service": "~4.5.7",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/test-utils": "^1.0.3",
+    "babel-eslint": "^10.1.0",
+    "chai": "^4.1.2",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-sass": "^5.1.0",
+    "prettier": "^2.2.1",
+    "sass": "^1.52.2",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sanyers/sim-view.git"
+  },
+  "homepage": "https://sanyers.github.io/sim-view",
+  "keywords": [
+    "elementui",
+    "vue",
+    "components"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sanyers/sim-view/issues"
+  },
+  "unpkg": "lib/sim-view.umd.min.js",
+  "style": "lib/theme-chalk/index.css"
+}
